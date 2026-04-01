@@ -29,16 +29,16 @@ export function ShoppingCart() {
   const total = subtotal + tax;
 
   return (
-    <div className="min-h-screen w-full bg-gradient-to-br from-slate-50 to-white" style={{ fontFamily: 'Inter, sans-serif' }}>
+    <div className="min-h-screen w-full bg-[#070d1f] text-white" style={{ fontFamily: 'Inter, sans-serif' }}>
       <div className="max-w-[1920px] mx-auto p-16">
         {/* Header */}
         <div className="flex items-center justify-between mb-12">
-          <Link to="/upsell" className="flex items-center gap-2 text-slate-600 hover:text-slate-900 transition-colors">
+          <Link to="/upsell" className="flex items-center gap-2 text-slate-300 hover:text-white transition-colors">
             <ArrowLeft size={20} />
-            <span className="font-medium">Back</span>
+            <span className="font-medium">Back to SpotNest</span>
           </Link>
           <h1 className="text-5xl" style={{ fontWeight: 800 }}>
-            Shopping Cart
+            SpotNest Cart
           </h1>
           <div className="w-24" />
         </div>
@@ -60,8 +60,8 @@ export function ShoppingCart() {
                   initial={{ opacity: 0, x: 100 }}
                   animate={{ opacity: 1, x: 0 }}
                   transition={{ duration: 0.5, delay: index * 0.1 }}
-                  className={`bg-gradient-to-br ${bgColor} rounded-3xl p-8 border ${
-                    isMovie ? "border-rose-200" : "border-sky-200"
+                    className={`bg-white/[0.05] rounded-3xl p-8 border ${
+                    isMovie ? "border-rose-300/20" : "border-sky-300/20"
                   }`}
                 >
                   <div className="flex items-start justify-between">
@@ -74,8 +74,8 @@ export function ShoppingCart() {
                         <h3 className="text-2xl mb-2" style={{ fontWeight: 700 }}>
                           {item.title}
                         </h3>
-                        <p className="text-slate-600 mb-1">{item.subtitle}</p>
-                        <p className="text-sm text-slate-500">{item.date}</p>
+                        <p className="text-slate-300 mb-1">{item.subtitle}</p>
+                        <p className="text-sm text-slate-400">{item.date}</p>
                       </div>
                     </div>
 
@@ -101,10 +101,10 @@ export function ShoppingCart() {
             initial={{ opacity: 0, y: 50 }}
             animate={{ opacity: 1, y: 0 }}
             transition={{ duration: 0.6, delay: 0.3 }}
-            className="bg-white/80 backdrop-blur-[30px] border border-white/50 rounded-3xl p-12 shadow-2xl"
+            className="bg-white/[0.05] backdrop-blur-xl border border-white/10 rounded-3xl p-12 shadow-2xl"
           >
             <div className="flex items-center gap-3 mb-8">
-              <CartIcon size={28} className="text-slate-700" />
+              <CartIcon size={28} className="text-slate-100" />
               <h2 className="text-3xl" style={{ fontWeight: 700 }}>
                 Order Summary
               </h2>
@@ -112,14 +112,14 @@ export function ShoppingCart() {
 
             <div className="space-y-4 mb-8">
               <div className="flex justify-between text-lg">
-                <span className="text-slate-600">Subtotal</span>
+                <span className="text-slate-300">Subtotal</span>
                 <span style={{ fontWeight: 600 }}>${subtotal.toFixed(2)}</span>
               </div>
               <div className="flex justify-between text-lg">
-                <span className="text-slate-600">Tax (8%)</span>
+                <span className="text-slate-300">Tax (8%)</span>
                 <span style={{ fontWeight: 600 }}>${tax.toFixed(2)}</span>
               </div>
-              <div className="h-px bg-slate-200 my-4" />
+              <div className="h-px bg-white/10 my-4" />
               <div className="flex justify-between text-2xl">
                 <span style={{ fontWeight: 700 }}>Total</span>
                 <span style={{ fontWeight: 800 }}>${total.toFixed(2)}</span>
@@ -134,7 +134,7 @@ export function ShoppingCart() {
               Proceed to Checkout
             </Link>
 
-            <div className="mt-6 text-center text-sm text-slate-500">
+            <div className="mt-6 text-center text-sm text-slate-300">
               Secure checkout powered by industry-leading encryption
             </div>
           </motion.div>

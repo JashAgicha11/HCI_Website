@@ -13,6 +13,10 @@ import { ShowcaseGrid } from "./components/ShowcaseGrid";
 import { UserProfile } from "./components/UserProfile";
 import { BookingHistory } from "./components/BookingHistory";
 import { HelpSupport } from "./components/HelpSupport";
+import { EventDiscovery } from "./components/EventDiscovery";
+import { HotelBooking } from "./components/HotelBooking";
+import { LoginPage } from "./components/LoginPage";
+import { RegisterPage } from "./components/RegisterPage";
 
 export const router = createBrowserRouter([
   {
@@ -67,5 +71,21 @@ export const router = createBrowserRouter([
   {
     path: "/help",
     Component: HelpSupport,
+  },
+  {
+    path: "/events",
+    Component: EventDiscovery,
+  },
+  {
+    path: "/hotels",
+    Component: HotelBooking,
+  },
+  {
+    path: "/login",
+    Component: LoginPage,
+  },
+  {
+    path: "/register",
+    Component: RegisterPage,
   },
 ]);

@@ -71,10 +71,10 @@ export function HelpSupport() {
         <div className="flex items-center justify-between mb-8">
           <Link to="/" className="flex items-center gap-2 text-slate-600 hover:text-slate-900 transition-colors">
             <ArrowLeft size={20} />
-            <span className="font-medium">Back to Home</span>
+            <span className="font-medium">Back to SpotNest</span>
           </Link>
           <h1 className="text-4xl" style={{ fontWeight: 800 }}>
-            Help & Support
+            SpotNest Help & Support
           </h1>
           <div className="w-24" />
         </div>

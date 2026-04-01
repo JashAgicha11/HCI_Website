@@ -58,16 +58,16 @@ export function MovieDiscovery() {
   const [hoveredId, setHoveredId] = useState<number | null>(null);
 
   return (
-    <div className="min-h-screen w-full bg-gradient-to-br from-slate-50 to-white" style={{ fontFamily: 'Inter, sans-serif' }}>
+    <div className="min-h-screen w-full bg-[#070d1f] text-white" style={{ fontFamily: 'Inter, sans-serif' }}>
       <div className="max-w-[1920px] mx-auto p-16">
         {/* Header */}
         <div className="flex items-center justify-between mb-12">
-          <Link to="/dashboard" className="flex items-center gap-2 text-slate-600 hover:text-slate-900 transition-colors">
+          <Link to="/dashboard" className="flex items-center gap-2 text-slate-300 hover:text-white transition-colors">
             <ArrowLeft size={20} />
-            <span className="font-medium">Back</span>
+            <span className="font-medium">Back to SpotNest</span>
           </Link>
           <h1 className="text-5xl" style={{ fontWeight: 800 }}>
-            Now Showing
+            SpotNest Now Showing
           </h1>
           <div className="w-24" />
         </div>
@@ -139,7 +139,7 @@ export function MovieDiscovery() {
                 <h3 className="text-xl mb-2" style={{ fontWeight: 600 }}>
                   {movie.title}
                 </h3>
-                <div className="flex items-center gap-4 text-sm text-slate-600">
+                <div className="flex items-center gap-4 text-sm text-slate-300">
                   <div className="flex items-center gap-1">
                     <Star size={14} fill="currentColor" className="text-yellow-500" />
                     <span>{movie.rating}</span>

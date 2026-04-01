@@ -129,7 +129,7 @@ export function BookingHistory() {
         >
           <Link to="/" className="flex items-center gap-2 px-4 py-2 bg-white/60 backdrop-blur-md border border-white/40 rounded-full text-slate-600 hover:text-slate-900 hover:bg-white/80 transition-all duration-300 shadow-lg">
             <ArrowLeft size={20} />
-            <span className="font-medium">Back to Home</span>
+            <span className="font-medium">Back to SpotNest</span>
           </Link>
 
           <div className="text-center">
@@ -140,7 +140,7 @@ export function BookingHistory() {
               className="text-5xl bg-gradient-to-r from-slate-800 via-blue-800 to-purple-800 bg-clip-text text-transparent mb-2"
               style={{ fontWeight: 900 }}
             >
-              Booking History
+              SpotNest Booking History
             </motion.h1>
             <motion.div
               initial={{ opacity: 0 }}
@@ -405,7 +405,7 @@ export function BookingHistory() {
                 transition={{ delay: 0.4 }}
                 className="text-slate-600 mb-8 text-lg max-w-md mx-auto"
               >
-                Try adjusting your filters or make your first booking to get started on your entertainment and travel journey!
+                Try adjusting your filters or make your first booking to get started on your SpotNest entertainment and travel journey!
               </motion.p>
 
               <motion.div

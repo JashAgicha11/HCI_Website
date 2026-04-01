@@ -41,16 +41,16 @@ export function UpsellAddons() {
   const totalItems = addons.reduce((sum, a) => sum + a.quantity, 0);
 
   return (
-    <div className="min-h-screen w-full bg-gradient-to-br from-slate-50 to-white" style={{ fontFamily: 'Inter, sans-serif' }}>
+    <div className="min-h-screen w-full bg-[#070d1f] text-white" style={{ fontFamily: 'Inter, sans-serif' }}>
       <div className="max-w-[1920px] mx-auto p-16">
         {/* Header */}
         <div className="flex items-center justify-between mb-12">
-          <Link to="/cinema-seats" className="flex items-center gap-2 text-slate-600 hover:text-slate-900 transition-colors">
+          <Link to="/cinema-seats" className="flex items-center gap-2 text-slate-300 hover:text-white transition-colors">
             <ArrowLeft size={20} />
-            <span className="font-medium">Back</span>
+            <span className="font-medium">Back to SpotNest</span>
           </Link>
           <h1 className="text-5xl" style={{ fontWeight: 800 }}>
-            Enhance Your Experience
+            SpotNest Add-ons
           </h1>
           <div className="w-24" />
         </div>
@@ -62,7 +62,7 @@ export function UpsellAddons() {
             initial={{ opacity: 0, x: -50 }}
             animate={{ opacity: 1, x: 0 }}
             transition={{ duration: 0.6 }}
-            className="bg-gradient-to-br from-rose-50 to-red-100/50 rounded-3xl p-12 border border-rose-200"
+            className="bg-white/[0.04] rounded-3xl p-12 border border-white/10"
           >
             <div className="flex items-center gap-3 mb-8">
               <div className="w-12 h-12 bg-[#DC143C] rounded-2xl flex items-center justify-center">
@@ -82,7 +82,7 @@ export function UpsellAddons() {
                     initial={{ opacity: 0, y: 20 }}
                     animate={{ opacity: 1, y: 0 }}
                     transition={{ duration: 0.3, delay: index * 0.1 }}
-                    className="bg-white/80 backdrop-blur-[30px] border border-white/50 rounded-2xl p-6 shadow-lg"
+                    className="bg-white/[0.06] backdrop-blur-xl border border-white/10 rounded-2xl p-6 shadow-lg"
                   >
                     <div className="flex items-center justify-between">
                       <div className="flex items-center gap-4">
@@ -93,7 +93,7 @@ export function UpsellAddons() {
                           <h3 className="text-lg mb-1" style={{ fontWeight: 600 }}>
                             {addon.name}
                           </h3>
-                          <p className="text-sm text-slate-600">${addon.price.toFixed(2)}</p>
+                          <p className="text-sm text-slate-300">${addon.price.toFixed(2)}</p>
                         </div>
                       </div>
 
@@ -127,7 +127,7 @@ export function UpsellAddons() {
             initial={{ opacity: 0, x: 50 }}
             animate={{ opacity: 1, x: 0 }}
             transition={{ duration: 0.6 }}
-            className="bg-gradient-to-br from-sky-50 to-blue-100/50 rounded-3xl p-12 border border-sky-200"
+            className="bg-white/[0.04] rounded-3xl p-12 border border-white/10"
           >
             <div className="flex items-center gap-3 mb-8">
               <div className="w-12 h-12 bg-[#007FFF] rounded-2xl flex items-center justify-center">
@@ -147,7 +147,7 @@ export function UpsellAddons() {
                     initial={{ opacity: 0, y: 20 }}
                     animate={{ opacity: 1, y: 0 }}
                     transition={{ duration: 0.3, delay: index * 0.1 }}
-                    className="bg-white/80 backdrop-blur-[30px] border border-white/50 rounded-2xl p-6 shadow-lg"
+                    className="bg-white/[0.06] backdrop-blur-xl border border-white/10 rounded-2xl p-6 shadow-lg"
                   >
                     <div className="flex items-center justify-between">
                       <div className="flex items-center gap-4">
@@ -158,7 +158,7 @@ export function UpsellAddons() {
                           <h3 className="text-lg mb-1" style={{ fontWeight: 600 }}>
                             {addon.name}
                           </h3>
-                          <p className="text-sm text-slate-600">${addon.price.toFixed(2)}</p>
+                          <p className="text-sm text-slate-300">${addon.price.toFixed(2)}</p>
                         </div>
                       </div>
 
@@ -189,10 +189,10 @@ export function UpsellAddons() {
         </div>
 
         {/* Bottom Bar */}
-        <div className="fixed bottom-0 left-0 right-0 bg-white/90 backdrop-blur-[30px] border-t border-slate-200 p-8">
+        <div className="fixed bottom-0 left-0 right-0 bg-[#070d1f]/90 backdrop-blur-xl border-t border-white/10 p-8">
           <div className="max-w-[1920px] mx-auto flex items-center justify-between">
             <div>
-              <div className="text-sm text-slate-600 mb-1">Total Add-ons</div>
+              <div className="text-sm text-slate-300 mb-1">Total Add-ons</div>
               <div className="text-3xl" style={{ fontWeight: 700 }}>
                 {totalItems} {totalItems === 1 ? "Item" : "Items"}
               </div>
@@ -201,7 +201,7 @@ export function UpsellAddons() {
             <div className="flex gap-4">
               <Link
                 to="/cart"
-                className="px-12 py-4 bg-slate-200 text-slate-700 rounded-full text-lg hover:bg-slate-300 transition-all duration-300"
+                className="px-12 py-4 bg-white/10 text-white rounded-full text-lg hover:bg-white/20 transition-all duration-300"
                 style={{ fontWeight: 600 }}
               >
                 Skip

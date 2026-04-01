@@ -4,13 +4,13 @@ import { motion } from "motion/react";
 
 export function ConfirmationDashboard() {
   return (
-    <div className="min-h-screen w-full bg-gradient-to-br from-emerald-50 via-white to-green-50" style={{ fontFamily: 'Inter, sans-serif' }}>
+    <div className="min-h-screen w-full bg-[#070d1f] text-white" style={{ fontFamily: 'Inter, sans-serif' }}>
       <div className="max-w-[1920px] mx-auto p-16">
         {/* Header */}
         <div className="flex items-center justify-between mb-12">
-          <Link to="/" className="flex items-center gap-2 text-slate-600 hover:text-slate-900 transition-colors">
+          <Link to="/" className="flex items-center gap-2 text-slate-300 hover:text-white transition-colors">
             <ArrowLeft size={20} />
-            <span className="font-medium">Back to Home</span>
+            <span className="font-medium">Back to SpotNest</span>
           </Link>
           <div className="w-24" />
         </div>
@@ -27,9 +27,9 @@ export function ConfirmationDashboard() {
               <CheckCircle2 size={72} className="text-white" strokeWidth={2.5} />
             </div>
             <h1 className="text-6xl mb-4" style={{ fontWeight: 800 }}>
-              Booking Confirmed!
+              SpotNest Booking Confirmed!
             </h1>
-            <p className="text-xl text-slate-600">
+            <p className="text-xl text-slate-300">
               Your tickets have been sent to your email
             </p>
           </motion.div>
@@ -39,7 +39,7 @@ export function ConfirmationDashboard() {
             initial={{ opacity: 0, y: 50 }}
             animate={{ opacity: 1, y: 0 }}
             transition={{ duration: 0.6, delay: 0.2 }}
-            className="bg-white/80 backdrop-blur-[30px] border border-white/50 rounded-3xl p-12 shadow-2xl mb-8"
+            className="bg-white/[0.05] backdrop-blur-xl border border-white/10 rounded-3xl p-12 shadow-2xl mb-8"
           >
             <h2 className="text-3xl mb-8" style={{ fontWeight: 700 }}>
               Your Journey Timeline
@@ -121,7 +121,7 @@ export function ConfirmationDashboard() {
               Download PDF Tickets
             </button>
 
-            <button className="flex items-center justify-center gap-3 py-6 bg-white/80 backdrop-blur-[30px] border-2 border-slate-200 text-slate-700 rounded-2xl hover:bg-white hover:border-slate-300 transition-all duration-300 text-lg" style={{ fontWeight: 700 }}>
+            <button className="flex items-center justify-center gap-3 py-6 bg-white/10 backdrop-blur-xl border-2 border-white/20 text-white rounded-2xl hover:bg-white/20 hover:border-white/30 transition-all duration-300 text-lg" style={{ fontWeight: 700 }}>
               <Mail size={24} />
               Email Tickets
             </button>
@@ -134,8 +134,8 @@ export function ConfirmationDashboard() {
             transition={{ duration: 0.6, delay: 0.6 }}
             className="mt-12 text-center"
           >
-            <div className="inline-flex items-center gap-4 px-8 py-4 bg-slate-100 rounded-full">
-              <span className="text-sm text-slate-600">Booking Reference:</span>
+            <div className="inline-flex items-center gap-4 px-8 py-4 bg-white/10 rounded-full border border-white/15">
+              <span className="text-sm text-slate-300">Booking Reference:</span>
               <span className="text-xl tracking-wider" style={{ fontWeight: 700 }}>
                 BK-2026-XY789Z
               </span>
@@ -151,10 +151,10 @@ export function ConfirmationDashboard() {
           >
             <Link
               to="/"
-              className="inline-flex items-center gap-2 px-8 py-4 text-slate-600 hover:text-slate-900 transition-colors"
+              className="inline-flex items-center gap-2 px-8 py-4 text-slate-300 hover:text-white transition-colors"
               style={{ fontWeight: 600 }}
             >
-              Return to Grid View
+              Return to SpotNest Home
             </Link>
           </motion.div>
         </div>

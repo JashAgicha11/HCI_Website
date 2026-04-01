@@ -127,16 +127,16 @@ export function BusTrainLayout() {
   };
 
   return (
-    <div className="min-h-screen w-full bg-gradient-to-br from-slate-50 to-white" style={{ fontFamily: 'Inter, sans-serif' }}>
+    <div className="min-h-screen w-full bg-[#070d1f] text-white" style={{ fontFamily: 'Inter, sans-serif' }}>
       <div className="max-w-[1920px] mx-auto p-16">
         {/* Header */}
         <div className="flex items-center justify-between mb-12">
-          <Link to="/travel" className="flex items-center gap-2 text-slate-600 hover:text-slate-900 transition-colors">
+          <Link to="/travel" className="flex items-center gap-2 text-slate-300 hover:text-white transition-colors">
             <ArrowLeft size={20} />
-            <span className="font-medium">Back</span>
+            <span className="font-medium">Back to SpotNest</span>
           </Link>
           <h1 className="text-5xl" style={{ fontWeight: 800 }}>
-            Select Your Seat
+            SpotNest Coach Layout
           </h1>
           <div className="w-24" />
         </div>
@@ -147,32 +147,32 @@ export function BusTrainLayout() {
             <div className="w-8 h-8 bg-slate-100 border-2 border-slate-300 rounded-xl flex items-center justify-center">
               <Armchair size={16} className="text-slate-600" />
             </div>
-            <span className="text-sm">Available</span>
+            <span className="text-sm text-slate-200">Available</span>
           </div>
           <div className="flex items-center gap-2">
             <div className="w-8 h-8 bg-[#007FFF] border-2 border-[#007FFF] rounded-xl flex items-center justify-center">
               <Armchair size={16} className="text-white" />
             </div>
-            <span className="text-sm">Selected</span>
+            <span className="text-sm text-slate-200">Selected</span>
           </div>
           <div className="flex items-center gap-2">
             <div className="w-8 h-8 bg-slate-100 border-2 border-slate-300 rounded-xl flex items-center justify-center relative">
               <Armchair size={16} className="text-slate-600" />
               <div className="absolute -right-0.5 -top-0.5 w-2 h-2 bg-sky-400 rounded-full" />
             </div>
-            <span className="text-sm">Window</span>
+            <span className="text-sm text-slate-200">Window</span>
           </div>
           <div className="flex items-center gap-2">
             <div className="w-8 h-8 bg-slate-300 border-2 border-slate-400 rounded-xl flex items-center justify-center">
               <Armchair size={16} className="text-slate-500" />
             </div>
-            <span className="text-sm">Occupied</span>
+            <span className="text-sm text-slate-200">Occupied</span>
           </div>
         </div>
 
         {/* Bus Layout */}
         <div className="max-w-2xl mx-auto">
-          <div className="bg-white/80 backdrop-blur-[30px] border border-white/50 rounded-[3rem] p-12 shadow-2xl">
+          <div className="bg-white/[0.05] backdrop-blur-xl border border-white/10 rounded-[3rem] p-12 shadow-2xl">
             {/* Bus Direction Indicator */}
             <div className="text-center mb-8">
               <div className="inline-flex items-center gap-2 px-6 py-3 bg-[#007FFF] text-white rounded-full text-sm" style={{ fontWeight: 600 }}>
@@ -203,17 +203,17 @@ export function BusTrainLayout() {
             </div>
 
             {/* Bus Info */}
-            <div className="mt-8 text-center text-sm text-slate-500">
+            <div className="mt-8 text-center text-sm text-slate-300">
               Luxury Sleeper Bus • 45 Seats • AC • WiFi
             </div>
           </div>
         </div>
 
         {/* Bottom Bar */}
-        <div className="fixed bottom-0 left-0 right-0 bg-white/90 backdrop-blur-[30px] border-t border-slate-200 p-8">
+        <div className="fixed bottom-0 left-0 right-0 bg-[#070d1f]/90 backdrop-blur-xl border-t border-white/10 p-8">
           <div className="max-w-[1920px] mx-auto flex items-center justify-between">
             <div>
-              <div className="text-sm text-slate-600 mb-1">Selected Seats</div>
+              <div className="text-sm text-slate-300 mb-1">Selected Seats</div>
               <div className="text-3xl" style={{ fontWeight: 700 }}>
                 {selectedCount} {selectedCount === 1 ? "Seat" : "Seats"}
               </div>

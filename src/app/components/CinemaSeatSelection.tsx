@@ -81,10 +81,10 @@ export function CinemaSeatSelection() {
         <div className="flex items-center justify-between mb-12">
           <Link to="/movies" className="flex items-center gap-2 text-slate-300 hover:text-white transition-colors">
             <ArrowLeft size={20} />
-            <span className="font-medium">Back</span>
+            <span className="font-medium">Back to SpotNest</span>
           </Link>
           <h1 className="text-5xl text-white" style={{ fontWeight: 800 }}>
-            Select Your Seats
+            SpotNest Seat Selection
           </h1>
           <div className="w-24" />
         </div>
